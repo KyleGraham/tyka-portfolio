@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* .image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+} */
+
+/* .img{
+  vertical-align: middle;
+  border-style: none;
+  padding: 1%;
+} */
+
+.Gallery-Box {
+  display: block;
+  background-color: #9eabc5;
+  padding: 0 10%;
+  width: 80%;
+  height: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.appBarBottom {
+  top: unset !important;
+  bottom: 0;
+}
+.fabButton {
+  position: 'absolute';
+  zIndex: 1;
+  top: -30;
+  left: 0;
+  right: 0;
+  margin: '0 auto';
+}
