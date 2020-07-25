@@ -3,16 +3,17 @@ import photo2 from './photos/bear2.jpg';
 import photo3 from './photos/bear3.jpg';
 
 var AWS = require('aws-sdk');
-AWS.config.update({accessKeyId: 'AKIAJUIN6M5GPTEZ6VRQ', secretAccessKey: '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', region: 'us-west-2', maxRetries: 0});
+AWS.config.update({accessKeyId: '', secretAccessKey: '', region: 'us-west-2', maxRetries: 0});
 var s3 = new AWS.S3();
 
 var allKeys = [];
 var bucket = 'https://tyka-portfolio.s3-us-west-2.amazonaws.com/product/';
 
 export function getPicNames(buck){
-  if (allKeys.length > 0){
-    return;
-  }
+  // if (allKeys.length > 0){
+  //   return;
+  // }
+  e.preventDefault();
   var params = { 
     Bucket: 'tyka-portfolio',
     Delimiter: '/',
@@ -20,6 +21,7 @@ export function getPicNames(buck){
   }
 
   s3.listObjectsV2(params, function (err, data) {
+    
     if (err) {
         console.log(err, err.stack); // an error occurred
     } else {
