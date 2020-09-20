@@ -22,9 +22,9 @@ export default class ContactMe extends React.Component {
   render() {
     return (
       <div>
-        <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+        <div src={EmailIcon} variant="outlined" color="primary" onClick={this.handleClickOpen}>
           <EmailIcon />
-        </Button>
+        </div>
         <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
           <DialogTitle id="form-dialog-title">Contact Me</DialogTitle>
             <DialogContent>

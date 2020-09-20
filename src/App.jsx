@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import icon from './photos/camera-icon.jpg';
 import ContactMe from './ContactMe.js';
-import ImageGallery from './ImageGallery';
+import ImageGalleryClass from './ImageGalleryClass';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { CardHeader, Card, Container, AppBar, IconButton, Toolbar, Typography,
-   ThemeProvider, Grid, BottomNavigation, BottomNavigationAction } from '@material-ui/core';
+import { Card, Container, AppBar, IconButton, Toolbar, Typography,
+   ThemeProvider, Grid } from '@material-ui/core';
 
-import EmailIcon from '@material-ui/icons/Email';
+// import EmailIcon from '@material-ui/icons/Email';
 
 const darkTheme = createMuiTheme({
   palette: {
@@ -25,7 +25,7 @@ function App() {
             justify="space-between"
             alignItems="center"
             container 
-            spacing={24}
+            spacing={10}
           >
             <Grid item>
               <IconButton edge="start" color='inherit' aria-label="menu">
@@ -57,7 +57,7 @@ function App() {
               Product Photography
             </Typography>
             <Card>
-              <ImageGallery />
+              <ImageGalleryClass />
             </Card>
           </Container>
         </Container>
